@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace A_Day_At_The_Races
 {
-    public partial class Form1 : Form
+    public partial class Parlor : Form
     {
-        public Form1()
+        public Parlor()
         {
             InitializeComponent();
         }

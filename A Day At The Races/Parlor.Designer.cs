@@ -1,6 +1,6 @@
 ﻿namespace A_Day_At_The_Races
 {
-    partial class Form1
+    partial class Parlor
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Parlor));
             this.raceTrack = new System.Windows.Forms.PictureBox();
             this.dog1 = new System.Windows.Forms.PictureBox();
             this.dog2 = new System.Windows.Forms.PictureBox();
@@ -38,17 +38,17 @@
             this.BobRB = new System.Windows.Forms.RadioButton();
             this.AlRB = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Allbl = new System.Windows.Forms.Label();
+            this.Boblbl = new System.Windows.Forms.Label();
+            this.Joelbl = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
+            this.betsLabel = new System.Windows.Forms.Label();
             this.minimumBetLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.race = new System.Windows.Forms.Button();
-            this.betsLabel = new System.Windows.Forms.Label();
-            this.Joelbl = new System.Windows.Forms.Label();
-            this.Boblbl = new System.Windows.Forms.Label();
-            this.Allbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.raceTrack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dog1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dog2)).BeginInit();
@@ -173,6 +173,36 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Betting Parlor";
             // 
+            // Allbl
+            // 
+            this.Allbl.AutoSize = true;
+            this.Allbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Allbl.Location = new System.Drawing.Point(207, 96);
+            this.Allbl.Name = "Allbl";
+            this.Allbl.Size = new System.Drawing.Size(42, 13);
+            this.Allbl.TabIndex = 8;
+            this.Allbl.Text = "AlLabel";
+            // 
+            // Boblbl
+            // 
+            this.Boblbl.AutoSize = true;
+            this.Boblbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Boblbl.Location = new System.Drawing.Point(207, 73);
+            this.Boblbl.Name = "Boblbl";
+            this.Boblbl.Size = new System.Drawing.Size(52, 13);
+            this.Boblbl.TabIndex = 8;
+            this.Boblbl.Text = "BobLabel";
+            // 
+            // Joelbl
+            // 
+            this.Joelbl.AutoSize = true;
+            this.Joelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Joelbl.Location = new System.Drawing.Point(207, 50);
+            this.Joelbl.Name = "Joelbl";
+            this.Joelbl.Size = new System.Drawing.Size(50, 13);
+            this.Joelbl.TabIndex = 8;
+            this.Joelbl.Text = "JoeLabel";
+            // 
             // numericUpDown2
             // 
             this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -234,6 +264,15 @@
             this.name.TabIndex = 5;
             this.name.Text = "name";
             // 
+            // betsLabel
+            // 
+            this.betsLabel.AutoSize = true;
+            this.betsLabel.Location = new System.Drawing.Point(207, 26);
+            this.betsLabel.Name = "betsLabel";
+            this.betsLabel.Size = new System.Drawing.Size(36, 13);
+            this.betsLabel.TabIndex = 4;
+            this.betsLabel.Text = "Bets:";
+            // 
             // minimumBetLabel
             // 
             this.minimumBetLabel.AutoSize = true;
@@ -264,46 +303,7 @@
             this.race.Text = "Race!";
             this.race.UseVisualStyleBackColor = true;
             // 
-            // betsLabel
-            // 
-            this.betsLabel.AutoSize = true;
-            this.betsLabel.Location = new System.Drawing.Point(207, 26);
-            this.betsLabel.Name = "betsLabel";
-            this.betsLabel.Size = new System.Drawing.Size(36, 13);
-            this.betsLabel.TabIndex = 4;
-            this.betsLabel.Text = "Bets:";
-            // 
-            // Joelbl
-            // 
-            this.Joelbl.AutoSize = true;
-            this.Joelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Joelbl.Location = new System.Drawing.Point(207, 50);
-            this.Joelbl.Name = "Joelbl";
-            this.Joelbl.Size = new System.Drawing.Size(50, 13);
-            this.Joelbl.TabIndex = 8;
-            this.Joelbl.Text = "JoeLabel";
-            // 
-            // Boblbl
-            // 
-            this.Boblbl.AutoSize = true;
-            this.Boblbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Boblbl.Location = new System.Drawing.Point(207, 73);
-            this.Boblbl.Name = "Boblbl";
-            this.Boblbl.Size = new System.Drawing.Size(52, 13);
-            this.Boblbl.TabIndex = 8;
-            this.Boblbl.Text = "BobLabel";
-            // 
-            // Allbl
-            // 
-            this.Allbl.AutoSize = true;
-            this.Allbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Allbl.Location = new System.Drawing.Point(207, 96);
-            this.Allbl.Name = "Allbl";
-            this.Allbl.Size = new System.Drawing.Size(42, 13);
-            this.Allbl.TabIndex = 8;
-            this.Allbl.Text = "AlLabel";
-            // 
-            // Form1
+            // Parlor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -314,8 +314,8 @@
             this.Controls.Add(this.dog2);
             this.Controls.Add(this.dog1);
             this.Controls.Add(this.raceTrack);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Parlor";
+            this.Text = "A Day At The Races";
             ((System.ComponentModel.ISupportInitialize)(this.raceTrack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dog1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dog2)).EndInit();

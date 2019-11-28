@@ -16,7 +16,7 @@ namespace A_Day_At_The_Races
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Parlor());
         }
     }
 }
