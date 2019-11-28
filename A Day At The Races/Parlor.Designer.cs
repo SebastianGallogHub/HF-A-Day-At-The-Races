@@ -41,8 +41,8 @@
             this.Allbl = new System.Windows.Forms.Label();
             this.Boblbl = new System.Windows.Forms.Label();
             this.Joelbl = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.dogOrder = new System.Windows.Forms.NumericUpDown();
+            this.betAmount = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
             this.betsLabel = new System.Windows.Forms.Label();
@@ -55,8 +55,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dog3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dog4)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dogOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.betAmount)).BeginInit();
             this.SuspendLayout();
             // 
             // raceTrack
@@ -119,9 +119,9 @@
             this.JoeRB.Name = "JoeRB";
             this.JoeRB.Size = new System.Drawing.Size(101, 17);
             this.JoeRB.TabIndex = 2;
-            this.JoeRB.TabStop = true;
             this.JoeRB.Text = "JoeRadioButton";
             this.JoeRB.UseVisualStyleBackColor = true;
+            this.JoeRB.CheckedChanged += new System.EventHandler(this.JoeRB_CheckedChanged);
             // 
             // BobRB
             // 
@@ -131,9 +131,9 @@
             this.BobRB.Name = "BobRB";
             this.BobRB.Size = new System.Drawing.Size(103, 17);
             this.BobRB.TabIndex = 2;
-            this.BobRB.TabStop = true;
             this.BobRB.Text = "BobRadioButton";
             this.BobRB.UseVisualStyleBackColor = true;
+            this.BobRB.CheckedChanged += new System.EventHandler(this.BobRB_CheckedChanged);
             // 
             // AlRB
             // 
@@ -143,9 +143,9 @@
             this.AlRB.Name = "AlRB";
             this.AlRB.Size = new System.Drawing.Size(93, 17);
             this.AlRB.TabIndex = 2;
-            this.AlRB.TabStop = true;
             this.AlRB.Text = "AlRadioButton";
             this.AlRB.UseVisualStyleBackColor = true;
+            this.AlRB.CheckedChanged += new System.EventHandler(this.AlRB_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -154,8 +154,8 @@
             this.groupBox1.Controls.Add(this.Allbl);
             this.groupBox1.Controls.Add(this.Boblbl);
             this.groupBox1.Controls.Add(this.Joelbl);
-            this.groupBox1.Controls.Add(this.numericUpDown2);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.dogOrder);
+            this.groupBox1.Controls.Add(this.betAmount);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.name);
             this.groupBox1.Controls.Add(this.betsLabel);
@@ -203,42 +203,42 @@
             this.Joelbl.TabIndex = 8;
             this.Joelbl.Text = "JoeLabel";
             // 
-            // numericUpDown2
+            // dogOrder
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown2.Location = new System.Drawing.Point(268, 135);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.dogOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dogOrder.Location = new System.Drawing.Point(268, 135);
+            this.dogOrder.Maximum = new decimal(new int[] {
             4,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.dogOrder.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(39, 20);
-            this.numericUpDown2.TabIndex = 7;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.dogOrder.Name = "dogOrder";
+            this.dogOrder.Size = new System.Drawing.Size(39, 20);
+            this.dogOrder.TabIndex = 7;
+            this.dogOrder.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // numericUpDown1
+            // betAmount
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(145, 135);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.betAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.betAmount.Location = new System.Drawing.Point(145, 135);
+            this.betAmount.Minimum = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(39, 20);
-            this.numericUpDown1.TabIndex = 7;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.betAmount.Name = "betAmount";
+            this.betAmount.Size = new System.Drawing.Size(39, 20);
+            this.betAmount.TabIndex = 7;
+            this.betAmount.Value = new decimal(new int[] {
             5,
             0,
             0,
@@ -316,6 +316,7 @@
             this.Controls.Add(this.raceTrack);
             this.Name = "Parlor";
             this.Text = "A Day At The Races";
+            this.Load += new System.EventHandler(this.Parlor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.raceTrack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dog1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dog2)).EndInit();
@@ -323,8 +324,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dog4)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dogOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.betAmount)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -345,8 +346,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label name;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown dogOrder;
+        private System.Windows.Forms.NumericUpDown betAmount;
         private System.Windows.Forms.Label Joelbl;
         private System.Windows.Forms.Label betsLabel;
         private System.Windows.Forms.Label Allbl;

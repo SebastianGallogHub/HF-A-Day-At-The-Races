@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace A_Day_At_The_Races
 {
@@ -13,8 +8,8 @@ namespace A_Day_At_The_Races
         private Bet MyBet; // An instance of Bet that has his bet // Supongo que es privado a Guy 
         public int Cash; // How much cash he has
                          // The last two fields are the guy’s GUI controls on the form
-        public RadioButton MyRadioButton; // My RadioButton
-        public Label MyLabel; // My Label
+        public RadioButton MyRadioButton = null; // My RadioButton
+        public Label MyLabel = null; // My Label
 
         public Guy(string Name, int Cash, RadioButton radioButton, Label label)
         {

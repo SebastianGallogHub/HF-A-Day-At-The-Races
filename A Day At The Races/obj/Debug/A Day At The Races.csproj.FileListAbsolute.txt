@@ -1,0 +1,9 @@
+d:\SEBASTIAN\0.Soft\0.CSharp\0.Masters\Head First\HFCSharp\A Day At The Races\A Day At The Races\bin\Debug\A Day At The Races.exe.config
+d:\SEBASTIAN\0.Soft\0.CSharp\0.Masters\Head First\HFCSharp\A Day At The Races\A Day At The Races\bin\Debug\A Day At The Races.exe
+d:\SEBASTIAN\0.Soft\0.CSharp\0.Masters\Head First\HFCSharp\A Day At The Races\A Day At The Races\bin\Debug\A Day At The Races.pdb
+d:\SEBASTIAN\0.Soft\0.CSharp\0.Masters\Head First\HFCSharp\A Day At The Races\A Day At The Races\obj\Debug\A Day At The Races.csprojAssemblyReference.cache
+d:\SEBASTIAN\0.Soft\0.CSharp\0.Masters\Head First\HFCSharp\A Day At The Races\A Day At The Races\obj\Debug\A_Day_At_The_Races.Parlor.resources
+d:\SEBASTIAN\0.Soft\0.CSharp\0.Masters\Head First\HFCSharp\A Day At The Races\A Day At The Races\obj\Debug\A_Day_At_The_Races.Properties.Resources.resources
+d:\SEBASTIAN\0.Soft\0.CSharp\0.Masters\Head First\HFCSharp\A Day At The Races\A Day At The Races\obj\Debug\A Day At The Races.csproj.GenerateResource.cache
+d:\SEBASTIAN\0.Soft\0.CSharp\0.Masters\Head First\HFCSharp\A Day At The Races\A Day At The Races\obj\Debug\A Day At The Races.exe
+d:\SEBASTIAN\0.Soft\0.CSharp\0.Masters\Head First\HFCSharp\A Day At The Races\A Day At The Races\obj\Debug\A Day At The Races.pdb

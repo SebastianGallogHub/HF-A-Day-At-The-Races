@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace A_Day_At_The_Races
@@ -29,7 +25,8 @@ namespace A_Day_At_The_Races
             // Update the position of my PictureBox on the form like this:
             // MyPictureBox.Left = StartingPosition + Location;
             // Return true if I won the race
-            return false;
+
+            return false    ;
         }
 
         public void TakeStartingPosition()
