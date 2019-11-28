@@ -7,18 +7,28 @@ using System.Windows.Forms;
 
 namespace A_Day_At_The_Races
 {
-    class Guy
+    public class Guy
     {
+        public string Name; // The guy's name
         public Bet MyBet; // An instance of Bet that has his bet
         public int Cash; // How much cash he has
                          // The last two fields are the guy’s GUI controls on the form
         public RadioButton MyRadioButton; // My RadioButton
         public Label MyLabel; // My Label
 
+        public Guy(string Name, int Cash)
+        {
+            this.Name = Name;
+            this.Cash = Cash;
+            this.MyBet = new Bet();
+        }
+
         public void UpdateLabel()
         {
             // Set my label to my bet’s description, and the label on my
             // radio button to show my cash ("Joe has 43 bucks")
+            MyLabel.Text = string.Format(MyBet.GetDescription());
+            MyRadioButton.Text = string.Format("{0} has {1} bucks", Name, Cash);
         }
 
         public void ClearBet() { } // Reset my bet so it’s zero
