@@ -58,7 +58,7 @@ namespace A_Day_At_The_Races
             betAmount.Value = betAmount.Minimum;
             dogOrder.Value = dogOrder.Minimum;
         }
-
+            
         private void JoeRB_CheckedChanged(object sender, EventArgs e)
         {
             SelectBettor(Guys[0]);

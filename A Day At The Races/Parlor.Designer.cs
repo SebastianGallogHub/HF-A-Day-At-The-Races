@@ -74,7 +74,7 @@
             // dog1
             // 
             this.dog1.Image = ((System.Drawing.Image)(resources.GetObject("dog1.Image")));
-            this.dog1.Location = new System.Drawing.Point(12, 24);
+            this.dog1.Location = new System.Drawing.Point(26, 24);
             this.dog1.Name = "dog1";
             this.dog1.Size = new System.Drawing.Size(80, 36);
             this.dog1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -84,7 +84,7 @@
             // dog2
             // 
             this.dog2.Image = ((System.Drawing.Image)(resources.GetObject("dog2.Image")));
-            this.dog2.Location = new System.Drawing.Point(12, 93);
+            this.dog2.Location = new System.Drawing.Point(26, 93);
             this.dog2.Name = "dog2";
             this.dog2.Size = new System.Drawing.Size(80, 36);
             this.dog2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,7 +94,7 @@
             // dog3
             // 
             this.dog3.Image = ((System.Drawing.Image)(resources.GetObject("dog3.Image")));
-            this.dog3.Location = new System.Drawing.Point(12, 169);
+            this.dog3.Location = new System.Drawing.Point(26, 169);
             this.dog3.Name = "dog3";
             this.dog3.Size = new System.Drawing.Size(80, 36);
             this.dog3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -104,7 +104,7 @@
             // dog4
             // 
             this.dog4.Image = ((System.Drawing.Image)(resources.GetObject("dog4.Image")));
-            this.dog4.Location = new System.Drawing.Point(12, 238);
+            this.dog4.Location = new System.Drawing.Point(26, 238);
             this.dog4.Name = "dog4";
             this.dog4.Size = new System.Drawing.Size(80, 36);
             this.dog4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
