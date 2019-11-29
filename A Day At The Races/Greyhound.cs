@@ -34,6 +34,7 @@ namespace A_Day_At_The_Races
         {
             // Reset my location to 0 and my PictureBox to starting position
             MyPictureBox.Left = StartingPosition;
+            Location = 0;
         }
     }
 }

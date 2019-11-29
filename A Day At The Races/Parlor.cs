@@ -14,6 +14,7 @@ namespace A_Day_At_The_Races
     {
         private Guy[] Guys;
         private Greyhound[] Dogs;
+        private Guy Bettor;
 
         public Parlor()
         {
@@ -42,7 +43,7 @@ namespace A_Day_At_The_Races
         private void Parlor_Load(object sender, EventArgs e)
         {
             minimumBetLabel.Text = string.Format("Minimum Bet: ${0}", betAmount.Minimum);
-         
+
             foreach (Greyhound dog in Dogs)
                 dog.TakeStartingPosition();
 
@@ -55,10 +56,11 @@ namespace A_Day_At_The_Races
         private void SelectBettor(Guy Guy)
         {
             name.Text = Guy.Name;
+            Bettor = Guy;
             betAmount.Value = betAmount.Minimum;
             dogOrder.Value = dogOrder.Minimum;
         }
-            
+
         private void JoeRB_CheckedChanged(object sender, EventArgs e)
         {
             SelectBettor(Guys[0]);
@@ -72,6 +74,43 @@ namespace A_Day_At_The_Races
         private void AlRB_CheckedChanged(object sender, EventArgs e)
         {
             SelectBettor(Guys[2]);
+        }
+
+        private void Bet_Click(object sender, EventArgs e)
+        {
+            Bettor.ClearBet();
+            if (!Bettor.PlaceBet((int)betAmount.Value, (int)dogOrder.Value))
+                MessageBox.Show(string.Format("{0} doesn't have enough bucks!", Bettor.Name), "Watch out!");
+            Bettor.UpdateLabel();
+        }
+
+        private void race_Click(object sender, EventArgs e)
+        {
+            groupBox1.Enabled = false;
+            int winner = Race();
+            foreach (Guy bettor in Guys)
+                bettor.Collect(winner);
+            foreach (Greyhound dog in Dogs)
+                dog.TakeStartingPosition();
+            groupBox1.Enabled = true;
+        }
+
+        private int Race()
+        {
+            int winner = 0;
+            while (true)
+            {
+                for (int i = 0; i < Dogs.Length; i++)
+                    if (Dogs[i].Run())
+                    {
+                        winner = i + 1;
+                        break;
+                    }
+                if (winner != 0) break;
+                System.Threading.Thread.Sleep(50);
+            }
+            MessageBox.Show(this, string.Format("Dog #{0} won the race!", winner), "We have a winner");
+            return winner;
         }
     }
 }

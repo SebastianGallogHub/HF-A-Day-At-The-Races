@@ -47,7 +47,7 @@
             this.name = new System.Windows.Forms.Label();
             this.betsLabel = new System.Windows.Forms.Label();
             this.minimumBetLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Bet = new System.Windows.Forms.Button();
             this.race = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.raceTrack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dog1)).BeginInit();
@@ -160,7 +160,7 @@
             this.groupBox1.Controls.Add(this.name);
             this.groupBox1.Controls.Add(this.betsLabel);
             this.groupBox1.Controls.Add(this.minimumBetLabel);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.Bet);
             this.groupBox1.Controls.Add(this.race);
             this.groupBox1.Controls.Add(this.BobRB);
             this.groupBox1.Controls.Add(this.AlRB);
@@ -282,15 +282,16 @@
             this.minimumBetLabel.TabIndex = 4;
             this.minimumBetLabel.Text = "Minimum Bet: $5";
             // 
-            // button1
+            // Bet
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(103, 135);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(36, 22);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Bets";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Bet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bet.Location = new System.Drawing.Point(103, 135);
+            this.Bet.Name = "Bet";
+            this.Bet.Size = new System.Drawing.Size(36, 22);
+            this.Bet.TabIndex = 3;
+            this.Bet.Text = "Bets";
+            this.Bet.UseVisualStyleBackColor = true;
+            this.Bet.Click += new System.EventHandler(this.Bet_Click);
             // 
             // race
             // 
@@ -302,6 +303,7 @@
             this.race.TabIndex = 3;
             this.race.Text = "Race!";
             this.race.UseVisualStyleBackColor = true;
+            this.race.Click += new System.EventHandler(this.race_Click);
             // 
             // Parlor
             // 
@@ -345,7 +347,7 @@
         private System.Windows.Forms.Label minimumBetLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label name;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Bet;
         private System.Windows.Forms.NumericUpDown dogOrder;
         private System.Windows.Forms.NumericUpDown betAmount;
         private System.Windows.Forms.Label Joelbl;

@@ -15,7 +15,7 @@ namespace A_Day_At_The_Races
         {
             this.Name = Name;
             this.Cash = Cash;
-            this.MyBet = new Bet(0,0,this);
+            this.MyBet = new Bet(0, 0, this);
             this.MyRadioButton = radioButton;
             this.MyLabel = label;
         }
@@ -28,9 +28,9 @@ namespace A_Day_At_The_Races
             MyRadioButton.Text = string.Format("{0} has {1} bucks", Name, Cash);
         }
 
-        public void ClearBet() 
+        public void ClearBet()
         {
-            this.MyBet = new Bet(0,0,this);
+            this.MyBet = new Bet(0, 0, this);
         } // Reset my bet so it’s zero
 
         public bool PlaceBet(int BetAmount, int DogToWin)
